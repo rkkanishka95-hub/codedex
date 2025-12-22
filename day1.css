@@ -1,0 +1,26 @@
+form{
+    background-color: orange;
+    width: 30%;
+    height: 500px;
+    border-style:solid ;
+    border-width: 5px;
+    border-color: blue;
+    margin: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 5px;
+    outline-offset: 5px;
+    color: red;
+}
+body{
+    background-color: rgb(126, 130, 134);
+    
+}
+h1{
+    color: red;
+}
+#head1{
+    color: black;
+}
