@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background-color: #f7f2ea;
+}
+
+.logo h2 {
+    color: #ff1900;
+}
+
+.menu a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #444;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background-image: url("https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/10/16/1413475915283/Tom-and-Jerry-014.jpg?width=465&dpr=1&s=none&crop=none");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.hero-text {
+    max-width: 520px;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.hero-text button {
+    padding: 12px 22px;
+    background-color: #c65a2e;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    padding: 70px;
+    gap: 50px;
+}
+
+.about-text {
+    width: 55%;
+}
+
+.about-text h2 {
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.about-text .outline {
+    padding: 10px 18px;
+    background: none;
+    border: 1px solid black;
+}
+
+.about-img {
+    width: 45%;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+    background-color: #0b0b0b;
+    color: white;
+    text-align: center;
+    padding: 60px 120px;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}

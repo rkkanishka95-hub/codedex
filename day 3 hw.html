@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Tutor Spot</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header{
+    background:#fff3e6;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-weight:bold;
+    font-size:20px;
+    color:#a04b2a;
+}
+
+.nav a{
+    margin:0 10px;
+    text-decoration:none;
+    color:#555;
+}
+
+/* HERO */
+.hero{
+    background:url("hero.jpg") no-repeat center;
+    background-size:cover;
+    padding:80px 40px;
+    color:white;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.5);
+}
+
+.hero-content{
+    position:relative;
+    max-width:600px;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    line-height:22px;
+}
+
+.hero button{
+    background:#e66a2c;
+    border:none;
+    padding:12px 20px;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* ABOUT */
+.about{
+    display:flex;
+    padding:60px 40px;
+    align-items:center;
+}
+
+.about-text{
+    width:50%;
+}
+
+.about-text h2{
+    font-size:30px;
+}
+
+.about-text p{
+    color:#555;
+    line-height:22px;
+}
+
+.about-text button{
+    background:white;
+    border:1px solid black;
+    padding:10px 18px;
+}
+
+.about-img{
+    width:50%;
+    text-align:center;
+}
+
+.about-img img{
+    width:300px;
+}
+
+/* TESTIMONIAL */
+.testimonial{
+    background:#c85c2e;
+    color:white;
+    padding:60px 40px;
+    text-align:center;
+}
+
+.testimonial p{
+    font-size:18px;
+    line-height:26px;
+    max-width:800px;
+    margin:auto;
+}
+</style>
+
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="logo">The Tutor Spot</div>
+    <div class="nav">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>Toronto’s most trusted tutoring</h1>
+        <p>
+            A place where learners in Grades 1 through 7 can get help with their studies.
+            Friendly staff and a comfortable atmosphere make learning easy.
+        </p>
+        <button>Book your appointment</button>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<div class="about">
+
+    <div class="about-text">
+        <h2>About us</h2>
+        <p>
+            Warm, caring and great at relating to kids, our tutors in Toronto know how
+            to engage and motivate each child in a personal way.
+        </p>
+        <p>
+            We offer in-depth expert tutoring in math, humanities and science.
+            Our services span Grades 1 through 7.
+        </p>
+        <button>Learn more</button>
+    </div>
+
+    <div class="about-img">
+        <img src="teacher.jpg" alt="teacher">
+    </div>
+
+</div>
+
+<!-- TESTIMONIAL -->
+<div class="testimonial">
+    <p>
+        “The Tutor Spot in Toronto has been a great help to our family.
+        Our son was struggling in school and they were able to help him
+        catch up and even get ahead. The staff is caring and competent
+        and we would recommend them to anyone.”
+    </p>
+</div>
+
+</body>
+</html>
