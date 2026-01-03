@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gradient Click Color Changer</title>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column; /* 👈 IMPORTANT */
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #bdc3c7, #2c3e50);
+            font-family: Arial, sans-serif;
+            transition: background 0.8s ease;
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 18px 40px;
+            font-size: 20px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            background: black;
+            color: white;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>BACKGROUND COLOUR</h1>
+    <button onclick="changeGradient()">Colour Changer</button>
+
+    <script>
+        function changeGradient() {
+            const gradients = [
+                "linear-gradient(to right, #ff9a9e, #fad0c4)",
+                "linear-gradient(to right, #a18cd1, #fbc2eb)",
+                "linear-gradient(to right, #fbc2eb, #a6c1ee)",
+                "linear-gradient(to right, #84fab0, #8fd3f4)",
+                "linear-gradient(to right, #fccb90, #d57eeb)",
+                "linear-gradient(to right, #ffecd2, #fcb69f)"
+            ];
+
+            const random = Math.floor(Math.random() * gradients.length);
+            document.body.style.background = gradients[random];
+        }
+    </script>
+
+</body>
+</html>

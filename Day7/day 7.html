@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Sum</title>
+    <style>
+        body{
+            text-align:center;
+            margin-top:150px;
+            font-family:Arial;
+            background-color: rgb(140, 195, 118);
+        }
+        .total-box{
+            margin-top:20px;
+            display:inline-block;
+            padding:15px 30px;
+            border:2px solid #000;
+            border-radius:8px;
+            font-size:20px;
+            font-weight:bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>ADDITION </h1>
+
+    <input type="text" id="nums" placeholder="Enter the number">
+    <button onclick="findSum()">Submit</button><br>
+
+    <div class="total-box" id="result">
+        TOTAL = 0
+    </div>
+
+    <script>
+        function findSum(){
+            let data = document.getElementById("nums").value;
+            let arr = data.split(",");
+            let total = 0;
+
+            for(let i = 0; i < arr.length; i++){
+                total += Number(arr[i]);
+            }
+
+            document.getElementById("result").innerText = 
+            "TOTAL = " + total;
+        }
+    </script>
+
+</body>
+</html>
